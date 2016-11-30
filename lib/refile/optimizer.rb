@@ -1,7 +1,6 @@
 require "refile/optimizer/version"
 require "refile/mini_magick"
 require "image_optim"
-require "image_optim_pack"
 
 module Refile
   module Optimizer
