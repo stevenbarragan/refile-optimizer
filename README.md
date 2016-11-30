@@ -1,28 +1,39 @@
 # Refile::Optimizer
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/refile/optimizer`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Refile [mini magic](https://github.com/refile/refile-mini_magick) + [image_optim](https://github.com/toy/image_optim)
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'refile-optimizer'
+gem "refile-optimizer", github: "stacksocial/refile-optimizer"
 ```
 
-And then execute:
+Add this line for no rails apps:
 
-    $ bundle
+```ruby
+require "refile/optimizer"
+```
 
-Or install it yourself as:
+NOTE: For now, you'd need to require refile-mini_magick from master.
 
-    $ gem install refile-optimizer
+```ruby
+gem "refile-mini_magick", github: "refile/refile-mini_magick"
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+All the [mini-magic processing helpers](https://github.com/refile/refile-mini_magick#usage) are available plus:
+
+* /attachments/:token/:backend\_name/**convertoptim**/jpg/:id
+* /attachments/:token/:backend\_name/**filloptim**/500/500/:id
+* /attachments/:token/:backend\_name/**fitoptim**/500/500/:id
+* /attachments/:token/:backend\_name/**limitoptim**/500/500/:id
+* /attachments/:token/:backend\_name/**padoptim**/500/500/:id
+* /attachments/:token/:backend\_name/**resampleoptim**/500/500/:id
+
+The image gets processed by mini-magic and then passed to image_optim to get its optimized version.
 
 ## Development
 
@@ -32,7 +43,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/refile-optimizer. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/stacksocial/refile-optimizer. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
