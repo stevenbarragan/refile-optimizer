@@ -1,13 +1,13 @@
 # Refile::Optimizer
 
-Refile [mini magic](https://github.com/refile/refile-mini_magick) + [image_optim](https://github.com/toy/image_optim)
+[Refile](https://github.com/refile/refile) + [mini magick](https://github.com/refile/refile-mini_magick) + [image optimization](https://github.com/toy/image_optim)
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "refile-optimizer", github: "stacksocial/refile-optimizer"
+gem "refile-optimizer"
 ```
 
 Add this line for no rails apps:
@@ -16,7 +16,9 @@ Add this line for no rails apps:
 require "refile/optimizer"
 ```
 
-NOTE: For now, you'd need to require refile-mini_magick from master.
+Check [image_optim](https://github.com/toy/image_optim#gem-installation) for binaries instalation.
+
+NOTE: For now, you need to require refile-mini_magick from master.
 
 ```ruby
 gem "refile-mini_magick", github: "refile/refile-mini_magick"
@@ -24,7 +26,7 @@ gem "refile-mini_magick", github: "refile/refile-mini_magick"
 
 ## Usage
 
-All the [mini-magic processing helpers](https://github.com/refile/refile-mini_magick#usage) are available plus:
+All the [mini-magick processing helpers](https://github.com/refile/refile-mini_magick#usage) are available plus:
 
 * /attachments/:token/:backend\_name/**convertoptim**/jpg/:id
 * /attachments/:token/:backend\_name/**filloptim**/500/500/:id
@@ -49,4 +51,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/stacks
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
