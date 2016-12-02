@@ -1,4 +1,5 @@
 # Refile::Optimizer
+[![Build Status](https://travis-ci.org/stacksocial/refile-optimizer.svg?branch=master)](https://travis-ci.org/stacksocial/refile-optimizer)
 
 [Refile](https://github.com/refile/refile) + [mini magick](https://github.com/refile/refile-mini_magick) + [image optimization](https://github.com/toy/image_optim)
 
