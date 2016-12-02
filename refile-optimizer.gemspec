@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Steven Barragán"]
   spec.email         = ["me@steven.mx"]
 
-  spec.summary       = %q{refile + mini_magic + image_optim}
+  spec.summary       = %q{refile + mini_magick + image_optim = 💣}
   spec.description   = %q{Image optimizer for Refile}
   spec.homepage      = "https://github.com/stacksocial/refile-optimizer/"
   spec.license       = "MIT"
