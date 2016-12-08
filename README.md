@@ -29,14 +29,14 @@ gem "refile-mini_magick", github: "refile/refile-mini_magick"
 
 All the [mini-magick processing helpers](https://github.com/refile/refile-mini_magick#usage) are available plus:
 
-* /attachments/:token/:backend\_name/**convertoptim**/jpg/:id
-* /attachments/:token/:backend\_name/**filloptim**/500/500/:id
-* /attachments/:token/:backend\_name/**fitoptim**/500/500/:id
+* /attachments/:token/:backend\_name/**convertoptim/jpg**/:id
 * /attachments/:token/:backend\_name/**limitoptim**/500/500/:id
+* /attachments/:token/:backend\_name/**fitoptim**/500/500/:id
+* /attachments/:token/:backend\_name/**filloptim**/500/500/:id
 * /attachments/:token/:backend\_name/**padoptim**/500/500/:id
 * /attachments/:token/:backend\_name/**resampleoptim**/500/500/:id
 
-The image gets processed by mini-magic and then passed to image_optim to get its optimized version.
+The image gets processed by `mini_magick` and then passed to `image_optim` to get an optimized version.
 
 ## Development
 
